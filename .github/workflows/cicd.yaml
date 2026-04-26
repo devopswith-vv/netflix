@@ -30,11 +30,11 @@ jobs:
 
       - name: Terraform Init (DEV)
         run: terraform init
-        working-directory: environments/dev
+        working-directory: enviroments/dev
 
       - name: Terraform Plan (DEV)
         run: terraform plan -var-file="terraform.tfvars"
-        working-directory: environments/dev
+        working-directory: enviroments/dev
 
 
 # ================= DEV DEPLOY =================
@@ -57,11 +57,11 @@ jobs:
 
       - name: Terraform Init
         run: terraform init
-        working-directory: environments/dev
+        working-directory: enviroments/dev
 
       - name: Terraform Apply
         run: terraform apply -auto-approve -var-file="terraform.tfvars"
-        working-directory: environments/dev
+        working-directory: enviroments/dev
 
 
 # ================= STAGE DEPLOY =================
@@ -84,11 +84,11 @@ jobs:
 
       - name: Terraform Init
         run: terraform init
-        working-directory: environments/stage
+        working-directory: enviroments/stage
 
       - name: Terraform Apply
         run: terraform apply -auto-approve -var-file="terraform.tfvars"
-        working-directory: environments/stage
+        working-directory: enviroments/stage
 
 
 # ================= PROD DEPLOY =================
@@ -111,8 +111,8 @@ jobs:
 
       - name: Terraform Init
         run: terraform init
-        working-directory: environments/prod
+        working-directory: enviroments/prod
 
       - name: Terraform Apply
         run: terraform apply -auto-approve -var-file="terraform.tfvars"
-        working-directory: environments/prod
+        working-directory: enviroments/prod
