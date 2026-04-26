@@ -1,0 +1,22 @@
+# Local .terraform directory (contains binaries and modules)
+.terraform/
+
+# Terraform state files (Seniors store these in S3, never Git!)
+*.tfstate
+*.tfstate.*
+
+# Crash logs
+crash.log
+crash.*.log
+
+# Exclude all variable files that might contain secrets
+*.tfvars
+*.tfvars.json
+
+# Exclude specific secret files
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+terraform.lock.hcl
+
