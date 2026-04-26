@@ -10,8 +10,7 @@ crash.log
 crash.*.log
 
 # Exclude all variable files that might contain secrets
-*.tfvars
-*.tfvars.json
+
 
 # Exclude specific secret files
 override.tf
